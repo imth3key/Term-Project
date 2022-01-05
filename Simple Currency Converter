@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+char opt;
+float x;
+cout<<"Hi. This is a simple Currency Converter"<<endl;
+cout<<""<<endl;
+cout<<"\n.Pound$ to Kenyan Shillings(P)\n.Au$tralian dollars to Kenyan shillings(A)\n.Euro$ to Kenyan shillings(E)\n.United $tates dollar to Kenyan shillings(U)"<<endl;
+cout<<"Please select your choice e.g(P,A,E,U)\n"<<endl;
+cin>>opt;
+cout<<"Please input the currency you wish to convert to Kenyan $hillings: "<<endl;
+cin>>x;
+	
+switch (opt){
+	case 'P':
+		cout<<"Pounds to Kenyan Shillings(P): \n.";
+		cout<<"\t1. "<<x*150.33;
+		break;
+		case 'A':
+		cout<<"Australian dollars to Kenyan Shillings(A): \n.";
+		cout<<"\t1. "<<x*82.0662;;
+		break;
+		case 'E':
+		cout<<"Euros to Kenyan Shillings(E): \n.";
+		cout<<"\t1. "<<x*127.11;
+		break;
+		case 'U':
+		cout<<"United $tates dollar to Kenyan Shillings(U): \n.";
+		cout<<"\t1. "<<x*111.9;
+		break;
+		default:
+			cout<<"Invalid input";
+			break;
+}
+return 0;
+}
